@@ -3,10 +3,7 @@
 <?php $id = $_GET['id']; ?>
 <?php 
      
-     // $check = "SELECT user_course.user_id,user_course.course_id,courses.course_id,courses.course_name FROM user_course INNER JOIN courses ON user_course.user_id = '$id' AND user_course.course_id = courses.course_id";
     
-      
-     //  $run_check = mysqli_query($conn,$check);
      ?>
      <form method="post" action="">
      <label>Chose Course</label>
@@ -98,7 +95,7 @@
             alert('Course added to your list');
             window.location.href='welcome_student.php?id=$id';
             </script>";
-           // header("Location:welcome_student.php?id=$id");
+           
     	}
     	else
     	{
